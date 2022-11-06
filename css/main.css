@@ -1,0 +1,64 @@
+body {
+  background-color: #1f2937;
+  color: #f3f4f6;
+  font-family: "Inter";
+  font-size: 22px;
+  min-height: 100vh;
+}
+
+/* Centerib konteineri ning paneb selle maksimaalseks suuruseks 1280px. Lehe peamine sisu peaks koik selle sees olema */
+.max-laius {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: #f3f4f6;
+  font-size: 24px;
+}
+
+.navbar-links {
+  display: flex;
+  margin-left: auto; /* Paneb lingid paremale */
+  gap: 50px;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0px;
+  gap: 100px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #f3f4f6;
+}
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer-list {
+  line-height: 5px;
+}

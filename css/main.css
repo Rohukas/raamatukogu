@@ -4,14 +4,15 @@ body {
   font-family: "Inter";
   font-size: 22px;
   min-height: 100vh;
-}
-
-/* Centerib konteineri ning paneb selle maksimaalseks suuruseks 1280px. Lehe peamine sisu peaks koik selle sees olema */
-.max-laius {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh;
+}
+
+section {
+  display: grid;
+  gap: 2.5rem;
 }
 
 .logo-text {
@@ -19,23 +20,25 @@ body {
   font-weight: 600;
 }
 
-.navbar {
+header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.navbar a {
+
+header a {
   text-decoration: none;
   color: #f3f4f6;
   font-size: 24px;
 }
 
-.navbar-links {
+nav {
   display: flex;
   margin-left: auto; /* Paneb lingid paremale */
   gap: 50px;
 }
 
-.footer {
+footer {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -50,7 +53,7 @@ body {
   flex-direction: column;
 }
 
-.footer a {
+footer a {
   text-decoration: none;
   color: #f3f4f6;
 }

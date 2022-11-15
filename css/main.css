@@ -2,23 +2,33 @@ body {
   background-color: #1f2937;
   color: #f3f4f6;
   font-family: "Inter";
-  font-size: 22px;
+  font-size: 16px;
+
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  /* täida terve box'i nii, et footer on lehe alumises osas */
+  flex: 1;
+}
+
+main,
+header,
+footer {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 100vh;
+  flex-shrink: 0;
 }
 
-section {
+main section {
   display: grid;
   gap: 2.5rem;
 }
 
-.logo-text {
-  font-size: 30px;
-  font-weight: 600;
-}
+/* NAVBAR */
 
 header {
   display: flex;
@@ -29,39 +39,51 @@ header {
 header a {
   text-decoration: none;
   color: #f3f4f6;
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 nav {
   display: flex;
-  margin-left: auto; /* Paneb lingid paremale */
   gap: 50px;
+  /* lingid paremale */
+  margin-left: auto;
 }
+
+/* FOOTER */
 
 footer {
   display: flex;
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 0px;
-  gap: 100px;
-  font-size: 24px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 16px;
   font-weight: normal;
+  padding-bottom: 10px;
 }
 
-.footer-links {
-  display: flex;
-  flex-direction: column;
+footer h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 footer a {
   text-decoration: none;
   color: #f3f4f6;
 }
-.footer-title {
-  font-weight: bold;
-  margin-bottom: 5px;
+
+footer a:hover {
+  text-decoration: underline;
 }
 
-.footer-list {
-  line-height: 5px;
+footer img {
+  padding-top: 5px;
 }

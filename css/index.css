@@ -34,7 +34,7 @@
   cursor: pointer;
   border-radius: 5px;
 }
-l .main-cards {
+.main-cards {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;

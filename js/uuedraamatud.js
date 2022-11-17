@@ -1,5 +1,9 @@
-// run on page load without jquery
-
+/* 
+    Autor: Robi Rohumaa
+    Kuupäev: 2022-17-11
+    Koodi kirjeldus:
+    - Koodi eesmärk on luua raamatute leht, kus on võimalik lisada raamatuid lemmikutesse ja neid kuvada.
+*/
 const RAAMATUD = [
   {
     id: 1,
@@ -51,6 +55,12 @@ const RAAMATUD = [
   },
 ];
 
+/* 
+    Autor: Robi Rohumaa
+    Kuupäev: 2022-17-11
+    Koodi kirjeldus:
+    - Sisestab raamatute andmed HTML-i.
+*/
 function insertBooks() {
   const books = document.getElementById("books");
   RAAMATUD.forEach((raamat) => {
@@ -73,6 +83,12 @@ function insertBooks() {
     books.appendChild(book);
   });
 }
+/* 
+    Autor: Robi Rohumaa
+    Kuupäev: 2022-17-11
+    Koodi kirjeldus:
+    - Lisab raamatu lemmikutesse id põhjal.
+*/
 function addToFavourites(id) {
   // favourites is an array of ids
   const favourites = JSON.parse(localStorage.getItem("favourites")) || [];
@@ -93,11 +109,18 @@ function addToFavourites(id) {
   }
   localStorage.setItem("favourites", JSON.stringify(favourites));
 }
+/* 
+    Autor: Robi Rohumaa
+    Kuupäev: 2022-17-11
+    Koodi kirjeldus:
+    - Vaatab, kas raamat on lemmikutesse lisatud.
+*/
 function checkIfFavourite(id) {
   const favourites = JSON.parse(localStorage.getItem("favourites")) || [];
   return favourites.includes(id);
 }
 
 window.onload = function () {
+  // Lehe laadimisel kuvatakse raamatud
   insertBooks();
 };

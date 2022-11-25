@@ -9,7 +9,12 @@
 
 
   /* yoinked from  https://www.w3schools.com/howto/howto_css_timeline.asp   */
-/* The actual timeline (the vertical ruler) */
+  * {
+    box-sizing: border-box; /*SEE KOODI JUPP TEKITAS MULLE NIIPALJU PEAVALU*/
+  }
+
+
+  /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;

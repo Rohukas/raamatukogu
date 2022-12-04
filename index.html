@@ -1,231 +1,253 @@
 <!DOCTYPE html>
 <html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laukna Raamatukogu</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laukna Raamatukogu</title>
-  <link rel="icon" type="image/x-icon" href="/images/logo.png">
-  <script src="js/main.js"></script>
-  <script src="js/index.js"></script>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <!-- TODO Hetkel logo liiga tume. Muuta heledamaks, erksamaks. -->
+      <img src="images/logo.png" width="74" alt="Laukna raamatukogu logo" />
+      <p class="logo-text">Laukna Raamatukogu</p>
+      <nav>
+        <a href="/">Avaleht</a>
+        <a href="/uuedraamatud.html">Uued Raamatud</a>
+        <a href="/meielugu.html">Meie Lugu</a>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <!-- TODO Hetkel logo liiga tume. Muuta heledamaks, erksamaks. -->
-    <img src="images/logo.png" width="74" alt="Laukna raamatukogu logo">
-    <p class="logo-text">Laukna Raamatukogu</p>
-    <nav>
-      <a href="/">Avaleht</a>
-      <a href="/uuedraamatud.html">Uued Raamatud</a>
-      <a href="/meielugu.html">Meie Lugu</a>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Hero Sektsioon-->
-    <section class="hero">
-      <div class="hero-text">
-        <h1>
-          Avarda enda silmaringi lugedes raamatuid Laukna parimas raamatukogus
-        </h1>
-        <button class="hero-button-main">Saa lugejaks</button>
-        <button class="hero-button-secondary">Top raamatud</button>
-      </div>
-      <div>
-        <img src="images/hero.png" alt="hero" />
-      </div>
-    </section>
-    <!-- Main Content -->
-    <section class="main-cards">
-      <div class="content">
-        <h2 class="card-header">Raamatute lugemine suurendab ajumahtu</h2>
-        <p class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
-        </p>
-      </div>
-      <div>
-        <img src="images/card1.png" />
-      </div>
-    </section>
-    <section class="main-cards">
-      <div>
-        <img src="images/card2.png" />
-      </div>
-      <div class="content">
-        <h2 class="card-header">Raamatud viivad su maagilistele seiklustele</h2>
-        <p class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
-        </p>
-      </div>
-    </section>
-    <section>
-      <h2>Teated</h2>
-      <div class="event-list">
-        <figure>
-          <a href="#event1"><img src="images/events/event_1.jpg" /></a>
-          <figcaption>Rello otsib uusi lauljaid!</figcaption>
-        </figure>
-        <figure>
-          <a href="#event2"><img src="images/events/event_2.jpg" /></a>
-          <figcaption>Margus Tabori "Mamma lood"</figcaption>
-        </figure>
-        <figure>
-          <a href="#event3"><img src="images/events/event_3.jpg" /></a>
-          <figcaption>Kingi koolile raamat</figcaption>
-        </figure>
-        <figure>
-          <a href="#event4"><img src="images/events/event_4.jpg" /></a>
-          <figcaption>Kalender 2023</figcaption>
-        </figure>
-        <figure>
-          <a href="#event5"><img src="images/events/event_5.jpg" /></a>
-          <figcaption>Raul Rebase "Propaganda ja ajupesu"</figcaption>
-        </figure>
-      </div>
-    </section>
-    <section class="column-lists">
-      <div>
-        <h2>Lahtiolekuajad</h2>
-        <table class="timetable">
-          <tr>
-            <th>Esmaspäev</th>
-            <td>11.30 - 18.30</td>
-          </tr>
-          <tr>
-            <th>Teisipäev</th>
-            <td>suletud</td>
-          </tr>
-          <tr>
-            <th>Kolmapäev</th>
-            <td>10.30 - 17.30</td>
-          </tr>
-          <tr>
-            <th>Neljapäev</th>
-            <td>suletud</td>
-          </tr>
-          <tr>
-            <th>Reede</th>
-            <td>10.00 - 17.00</td>
-          </tr>
-          <tr>
-            <th>Laupäev</th>
-            <td>suletud</td>
-          </tr>
-          <tr>
-            <th>Pühapäev</th>
-            <td>suletud</td>
-          </tr>
-        </table>
-      </div>
-      <section id="contact-form">
-        <h2>Kontakt</h2>
-        <form id="contact" name="contact" accept-charset="utf-8">
-          <label>
-            <span>Nimi</span>
-            <input name="name" type="text" placeholder="Vargamäe Andres" />
-          </label>
-          <label>
-            <span>Email</span>
-            <input name="email" type="email" placeholder="andres@vargamae.ee" />
-          </label>
-          <label>
-            <span>Sõnum</span>
-            <textarea name="message" placeholder="Tee tööd ja näe vaeva, siis tuleb armastus."></textarea>
-          </label>
-          <input name="submit" type="submit" value="Saada" />
-        </form>
+    <main>
+      <!-- Hero Sektsioon-->
+      <section class="hero">
+        <div class="hero-text">
+          <h1>
+            Avarda enda silmaringi lugedes raamatuid Laukna parimas raamatukogus
+          </h1>
+          <div class="hero-container">
+            <button class="hero-button-main">Saa lugejaks</button>
+            <a href="/uuedraamatud.html" class="hero-button-secondary"
+              >Top raamatud</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="images/hero.png" alt="hero" />
+        </div>
       </section>
-    </section>
-    <section class="services">
-      <h2>Teenused</h2>
-      <div class="column-lists">
-        <div class="list-with-title">
-          <h3>Tasuta</h3>
-          <ul>
-            <li>teavikute kohapeal kasutamine</li>
-            <li>kojulaenutus</li>
-            <li>teatmenõuetele vastamine</li>
-            <li>kasutajakoolitused</li>
-            <li>kirjandusüritused</li>
-            <li>näitused</li>
-            <li>koduteenindus</li>
-            <li>WiFi võrgu kasutamine</li>
-          </ul>
+      <!-- Main Content -->
+      <section class="main-cards">
+        <div class="content">
+          <h2 class="card-header">Raamatute lugemine suurendab ajumahtu</h2>
+          <p class="card-content">
+            Raamatute lugemine on tõestatud viis aju suuruse suurendamiseks.
+            Lugedes kaasame oma aju kriitilise mõtlemise ja probleemide
+            lahendamisele, mis aitab arendada uusi närviühendusi. See toob kaasa
+            mälu ja keskendumisvõime paranemise, samuti sõnavara ja üldise
+            kognitiivse funktsiooni suurenemise. Regulaarselt lugedes saame
+            säilitada ja isegi parandada oma aju võimet töödelda teavet, mille
+            tulemuseks on suurem ja tervem aju.
+          </p>
         </div>
-        <div class="list-with-title">
-          <h3>Tasuline</h3>
-          <ul>
-            <li>paljundamine</li>
-            <li>printimine</li>
-            <li>skaneerimine</li>
-            <li>kohviautomaadi kasutamine</li>
-          </ul>
+        <div>
+          <img src="images/card1.png" />
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+      <section class="main-cards">
+        <div class="card-image">
+          <img src="images/card2.png" />
+        </div>
+        <div class="content">
+          <h2 class="card-header">
+            Raamatud viivad su maagilistele seiklustele
+          </h2>
+          <p class="card-content">
+            Raamatud viivad teid maagilistesse maailmadesse ja seiklustesse. Nad
+            võimaldavad teil põgeneda argipäevast ja avastada uusi kohti,
+            tegelasi ja kogemusi. Lühidalt öeldes on raamatud maagiline viis
+            reisida, ilma et peaks kodust lahkuma.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Teated</h2>
+        <div class="event-list">
+          <figure>
+            <a href="#event1"><img src="images/events/event_1.jpg" /></a>
+            <figcaption>Rello otsib uusi lauljaid!</figcaption>
+          </figure>
+          <figure>
+            <a href="#event2"><img src="images/events/event_2.jpg" /></a>
+            <figcaption>Margus Tabori "Mamma lood"</figcaption>
+          </figure>
+          <figure>
+            <a href="#event3"><img src="images/events/event_3.jpg" /></a>
+            <figcaption>Kingi koolile raamat</figcaption>
+          </figure>
+          <figure>
+            <a href="#event4"><img src="images/events/event_4.jpg" /></a>
+            <figcaption>Kalender 2023</figcaption>
+          </figure>
+          <figure>
+            <a href="#event5"><img src="images/events/event_5.jpg" /></a>
+            <figcaption>Raul Rebase "Propaganda ja ajupesu"</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="column-lists">
+        <div>
+          <h2>Lahtiolekuajad</h2>
+          <table class="timetable">
+            <tr>
+              <th>Esmaspäev</th>
+              <td>11.30 - 18.30</td>
+            </tr>
+            <tr>
+              <th>Teisipäev</th>
+              <td>suletud</td>
+            </tr>
+            <tr>
+              <th>Kolmapäev</th>
+              <td>10.30 - 17.30</td>
+            </tr>
+            <tr>
+              <th>Neljapäev</th>
+              <td>suletud</td>
+            </tr>
+            <tr>
+              <th>Reede</th>
+              <td>10.00 - 17.00</td>
+            </tr>
+            <tr>
+              <th>Laupäev</th>
+              <td>suletud</td>
+            </tr>
+            <tr>
+              <th>Pühapäev</th>
+              <td>suletud</td>
+            </tr>
+          </table>
+        </div>
+        <section id="contact-form">
+          <h2>Kontakt</h2>
+          <form id="contact" name="contact" accept-charset="utf-8">
+            <label>
+              <span>Nimi</span>
+              <input name="name" type="text" placeholder="Vargamäe Andres" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input
+                name="email"
+                type="email"
+                placeholder="andres@vargamae.ee"
+              />
+            </label>
+            <label>
+              <span>Sõnum</span>
+              <textarea
+                name="message"
+                placeholder="Tee tööd ja näe vaeva, siis tuleb armastus."
+              ></textarea>
+            </label>
+            <input name="submit" type="submit" value="Saada" />
+          </form>
+        </section>
+      </section>
+      <section class="services">
+        <h2>Teenused</h2>
+        <div class="column-lists">
+          <div class="list-with-title">
+            <h3>Tasuta</h3>
+            <ul>
+              <li>teavikute kohapeal kasutamine</li>
+              <li>kojulaenutus</li>
+              <li>teatmenõuetele vastamine</li>
+              <li>kasutajakoolitused</li>
+              <li>kirjandusüritused</li>
+              <li>näitused</li>
+              <li>koduteenindus</li>
+              <li>WiFi võrgu kasutamine</li>
+            </ul>
+          </div>
+          <div class="list-with-title">
+            <h3>Tasuline</h3>
+            <ul>
+              <li>paljundamine</li>
+              <li>printimine</li>
+              <li>skaneerimine</li>
+              <li>kohviautomaadi kasutamine</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer>
-    <section>
-      <h2>Lehed</h2>
-      <ul>
-        <li><a href="/">Avaleht</a></li>
-        <li><a href="/uuedraamatud.html">Uued Raamatud</a></li>
-        <li><a href="/meielugu.html">Meie Lugu</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Kontakt</h2>
-      <ul>
-        <li>Laukna küla, Märjamaa vald, Raplamaa</li>
-        <li>5192 1519</li>
-        <li>laukna.raamatukogu@marjamaa.ee</li>
-        <li>Edith Alasi</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Sotsiaalmeedia</h2>
-      <a href="https://www.facebook.com/profile.php?id=100066900775376"><img src="images/facebook.png" width="38"
-          alt="Facebook'i logo"></a>
-      <a href="https://www.facebook.com/profile.php?id=100066900775376"><img src="images/instagram.png" width="38"
-          alt="Instagram'i logo"></a>
-    </section>
-  </footer>
+    <footer>
+      <section>
+        <h2>Lehed</h2>
+        <ul>
+          <li><a href="/">Avaleht</a></li>
+          <li><a href="/uuedraamatud.html">Uued Raamatud</a></li>
+          <li><a href="/meielugu.html">Meie Lugu</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Kontakt</h2>
+        <ul>
+          <li>Laukna küla, Märjamaa vald, Raplamaa</li>
+          <li>5192 1519</li>
+          <li>laukna.raamatukogu@marjamaa.ee</li>
+          <li>Edith Alasi</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Sotsiaalmeedia</h2>
+        <a href="https://www.facebook.com/profile.php?id=100066900775376"
+          ><img src="images/facebook.png" width="38" alt="Facebook'i logo"
+        /></a>
+        <a href="https://www.facebook.com/profile.php?id=100066900775376"
+          ><img src="images/instagram.png" width="38" alt="Instagram'i logo"
+        /></a>
+      </section>
+    </footer>
 
-  <!--  Loome ligthboxid piltide suuremalt vaatamiseks.
+    <!--  Loome ligthboxid piltide suuremalt vaatamiseks.
         Autor: Tiffany Ong
         Link: https://codepen.io/ongtiffany/pen/BoOeQV  -->
-  <div class="lightbox-target" id="event1">
-    <img src="images/events/event_1.jpg" alt="Rello otsib uusi lauljaid!">
-    <a class="lightbox-close" href="#"></a>
-  </div>
-  <div class="lightbox-target" id="event2">
-    <img src="images/events/event_2.jpg" alt="Margus Tabori - Mamma lood">
-    <a class="lightbox-close" href="#"></a>
-  </div>
-  <div class="lightbox-target" id="event3">
-    <img src="images/events/event_3.jpg" alt="Kingi koolile raamat">
-    <a class="lightbox-close" href="#"></a>
-  </div>
-  <div class="lightbox-target" id="event4">
-    <img src="images/events/event_4.jpg" alt="Kalender 2023">
-    <a class="lightbox-close" href="#"></a>
-  </div>
-  <div class="lightbox-target" id="event5">
-    <img src="images/events/event_5.jpg" alt="Raul Rebase - Propaganda ja ajupesu">
-    <a class="lightbox-close" href="#"></a>
-  </div>
-</body>
-
+    <div class="lightbox-target" id="event1">
+      <img src="images/events/event_1.jpg" alt="Rello otsib uusi lauljaid!" />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+    <div class="lightbox-target" id="event2">
+      <img src="images/events/event_2.jpg" alt="Margus Tabori - Mamma lood" />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+    <div class="lightbox-target" id="event3">
+      <img src="images/events/event_3.jpg" alt="Kingi koolile raamat" />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+    <div class="lightbox-target" id="event4">
+      <img src="images/events/event_4.jpg" alt="Kalender 2023" />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+    <div class="lightbox-target" id="event5">
+      <img
+        src="images/events/event_5.jpg"
+        alt="Raul Rebase - Propaganda ja ajupesu"
+      />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+  </body>
 </html>

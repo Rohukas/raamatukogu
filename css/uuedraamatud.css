@@ -1,0 +1,50 @@
+/* Grid of two divs per row */
+.books {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.book-card {
+  width: 600px;
+  height: 600px;
+  background-color: #0284c7;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-image {
+  height: 300px;
+}
+
+.card-header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: -15px;
+}
+
+.card-author {
+  font-size: 20px;
+}
+
+.add-to-favourites-btn {
+  margin-top: auto;
+  background-color: #252d31;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.selected {
+  background-color: #101f27 !important;
+}

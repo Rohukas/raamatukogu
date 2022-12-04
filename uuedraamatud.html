@@ -14,11 +14,48 @@
 </head>
 
 <body>
-  <div w3-include-html="navbar.html"></div>
-  <div w3-include-html="footer.html"></div>
-  <script>
-    includeHTML();
-  </script>
+  <header>
+    <!-- TODO Hetkel logo liiga tume. Muuta heledamaks, erksamaks. -->
+    <img src="images/logo.png" width="74" alt="Laukna raamatukogu logo">
+    <p class="logo-text">Laukna Raamatukogu</p>
+    <nav>
+      <a href="/">Avaleht</a>
+      <a href="/uuedraamatud.html">Uued Raamatud</a>
+      <a href="/meielugu.html">Meie Lugu</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="content-header">Uued Raamatud</h1>
+    <div id="books" class="books"></div>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Lehed</h2>
+      <ul>
+        <li><a href="/">Avaleht</a></li>
+        <li><a href="/uuedraamatud.html">Uued Raamatud</a></li>
+        <li><a href="/meielugu.html">Meie Lugu</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Kontakt</h2>
+      <ul>
+        <li>Laukna küla, Märjamaa vald, Raplamaa</li>
+        <li>5192 1519</li>
+        <li>laukna.raamatukogu@marjamaa.ee</li>
+        <li>Edith Alasi</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Sotsiaalmeedia</h2>
+      <a href="https://www.facebook.com/profile.php?id=100066900775376"><img src="images/facebook.png" width="38"
+          alt="Facebook'i logo"></a>
+      <a href="https://www.facebook.com/profile.php?id=100066900775376"><img src="images/instagram.png" width="38"
+          alt="Instagram'i logo"></a>
+    </section>
+  </footer>
 </body>
 
 </html>

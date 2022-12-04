@@ -26,27 +26,69 @@
   </header>
 
   <main>
+    <!-- Hero Sektsioon-->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          Avarda enda silmaringi lugedes raamatuid Laukna parimas raamatukogus
+        </h1>
+        <button class="hero-button-main">Saa lugejaks</button>
+        <button class="hero-button-secondary">Top raamatud</button>
+      </div>
+      <div>
+        <img src="images/hero.png" alt="hero" />
+      </div>
+    </section>
+    <!-- Main Content -->
+    <section class="main-cards">
+      <div class="content">
+        <h2 class="card-header">Raamatute lugemine suurendab ajumahtu</h2>
+        <p class="card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat
+        </p>
+      </div>
+      <div>
+        <img src="images/card1.png" />
+      </div>
+    </section>
+    <section class="main-cards">
+      <div>
+        <img src="images/card2.png" />
+      </div>
+      <div class="content">
+        <h2 class="card-header">Raamatud viivad su maagilistele seiklustele</h2>
+        <p class="card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat
+        </p>
+      </div>
+    </section>
     <section>
       <h2>Teated</h2>
       <div class="event-list">
         <figure>
-          <a href="#event1"><img src="images/event_1.jpg" alt="Rello otsib uusi lauljaid!"></a>
+          <a href="#event1"><img src="images/events/event_1.jpg" /></a>
           <figcaption>Rello otsib uusi lauljaid!</figcaption>
         </figure>
         <figure>
-          <a href="#event2"><img src="images/event_2.jpg" alt="Margus Tabori - Mamma lood"></a>
+          <a href="#event2"><img src="images/events/event_2.jpg" /></a>
           <figcaption>Margus Tabori "Mamma lood"</figcaption>
         </figure>
         <figure>
-          <a href="#event3"><img src="images/event_3.jpg" alt="Kingi koolile raamat"></a>
+          <a href="#event3"><img src="images/events/event_3.jpg" /></a>
           <figcaption>Kingi koolile raamat</figcaption>
         </figure>
         <figure>
-          <a href="#event4"><img src="images/event_4.jpg" alt="Kalender 2023"></a>
+          <a href="#event4"><img src="images/events/event_4.jpg" /></a>
           <figcaption>Kalender 2023</figcaption>
         </figure>
         <figure>
-          <a href="#event5"><img src="images/event_5.jpg" alt="Raul Rebase - Propaganda ja ajupesu"></a>
+          <a href="#event5"><img src="images/events/event_5.jpg" /></a>
           <figcaption>Raul Rebase "Propaganda ja ajupesu"</figcaption>
         </figure>
       </div>
@@ -90,17 +132,17 @@
         <form id="contact" name="contact" accept-charset="utf-8">
           <label>
             <span>Nimi</span>
-            <input name="name" type="text" placeholder="Vargamäe Andres">
+            <input name="name" type="text" placeholder="Vargamäe Andres" />
           </label>
           <label>
             <span>Email</span>
-            <input name="email" type="email" placeholder="andres@vargamae.ee">
+            <input name="email" type="email" placeholder="andres@vargamae.ee" />
           </label>
           <label>
             <span>Sõnum</span>
             <textarea name="message" placeholder="Tee tööd ja näe vaeva, siis tuleb armastus."></textarea>
           </label>
-          <input name="submit" type="submit" value="Saada">
+          <input name="submit" type="submit" value="Saada" />
         </form>
       </section>
     </section>
@@ -132,6 +174,7 @@
       </div>
     </section>
   </main>
+
   <footer>
     <section>
       <h2>Lehed</h2>
@@ -158,27 +201,28 @@
           alt="Instagram'i logo"></a>
     </section>
   </footer>
+
   <!--  Loome ligthboxid piltide suuremalt vaatamiseks.
         Autor: Tiffany Ong
         Link: https://codepen.io/ongtiffany/pen/BoOeQV  -->
   <div class="lightbox-target" id="event1">
-    <img src="images/event_1.jpg" alt="Rello otsib uusi lauljaid!">
+    <img src="images/events/event_1.jpg" alt="Rello otsib uusi lauljaid!">
     <a class="lightbox-close" href="#"></a>
   </div>
   <div class="lightbox-target" id="event2">
-    <img src="images/event_2.jpg" alt="Margus Tabori - Mamma lood">
+    <img src="images/events/event_2.jpg" alt="Margus Tabori - Mamma lood">
     <a class="lightbox-close" href="#"></a>
   </div>
   <div class="lightbox-target" id="event3">
-    <img src="images/event_3.jpg" alt="Kingi koolile raamat">
+    <img src="images/events/event_3.jpg" alt="Kingi koolile raamat">
     <a class="lightbox-close" href="#"></a>
   </div>
   <div class="lightbox-target" id="event4">
-    <img src="images/event_4.jpg" alt="Kalender 2023">
+    <img src="images/events/event_4.jpg" alt="Kalender 2023">
     <a class="lightbox-close" href="#"></a>
   </div>
   <div class="lightbox-target" id="event5">
-    <img src="images/event_5.jpg" alt="Raul Rebase - Propaganda ja ajupesu">
+    <img src="images/events/event_5.jpg" alt="Raul Rebase - Propaganda ja ajupesu">
     <a class="lightbox-close" href="#"></a>
   </div>
 </body>

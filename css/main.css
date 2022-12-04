@@ -30,10 +30,49 @@ main section {
   display: grid;
 }
 
-h2,
-h3 {
-  text-align: center;
+h1 {
+  font-size: 32px;
 }
+
+.content-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.main-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.main-cards figure img {
+  max-width: 600px;
+  height: auto;
+}
+
+.content {
+  max-width: 600px;
+}
+.card-header {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.card-content {
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
 /* NAVBAR */
 
@@ -46,7 +85,7 @@ header {
 header a {
   text-decoration: none;
   color: #f3f4f6;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .logo-text {

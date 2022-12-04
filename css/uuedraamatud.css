@@ -1,9 +1,3 @@
-.header {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
 /* Grid of two divs per row */
 .books {
   display: grid;

@@ -10,8 +10,11 @@ body {
 }
 
 main {
-  /* täida terve box'i nii, et footer on lehe alumises osas */
+  /* täida terve box nii, et footer on lehe alumises osas */
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
 }
 
 main,
@@ -25,7 +28,11 @@ footer {
 
 main section {
   display: grid;
-  gap: 2.5rem;
+}
+
+h2,
+h3 {
+  text-align: center;
 }
 
 /* NAVBAR */

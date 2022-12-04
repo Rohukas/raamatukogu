@@ -1,67 +1,137 @@
 /* Teadete list */
 
 .event-list {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 300px;
-    gap: calc(2em / 2);
-    padding-inline: 2em;
-    padding-block-end: 2em;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px;
+  gap: calc(2em / 2);
+  padding-inline: 2em;
+  padding-block-end: 2em;
 
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    scroll-padding-inline-start: 2em;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline-start: 2em;
 }
 
 .event-list figure {
-    display: grid;
-    gap: inherit;
-    margin: 0;
+  display: grid;
+  gap: inherit;
+  margin: 0;
 
-    position: relative;
-    cursor: pointer;
-    user-select: none;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 .event-list figure a {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    border-radius: 0.5rem;
-    overflow: hidden;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .event-list figure a img {
-    display: block;
-    width: 300px;
-    height: 300px;
-    object-fit: scale-down;
-    background-color: #374252;
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: scale-down;
+  background-color: #374252;
 }
 
 .event-list figure figcaption {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
 }
 
 /* Lahtiolekuajad */
 
 .timetable {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .timetable th {
-    text-align: right;
-    padding-right: 5px;
+  text-align: right;
+  padding-right: 5px;
 }
 
 .timetable td {
-    text-align: left;
-    padding-left: 5px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.column-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contact,
+label,
+input[name="submit"] {
+  position: relative;
+}
+label > p,
+input,
+textarea,
+button {
+  box-sizing: border-box;
+}
+label {
+  display: block;
+}
+label > p {
+  display: none;
+}
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+}
+input.invalid,
+textarea.invalid {
+  border-color: #d5144d;
+}
+textarea {
+  height: 6em;
+}
+input[type="submit"],
+button {
+  background: #a7cd80;
+  color: #333;
+}
+input[type="submit"]:hover,
+button:hover {
+  background: #91b36f;
+}
+
+#contact-form {
+  text-align: justify;
+  line-height: 0;
+}
+#contact-form form {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  line-height: 1.5;
 }
 
 /* CSS, mis pildi peale klikkides avab selle suuremalt lehe keskel ja muudab ülejäänud lehe pimedamaks.
@@ -72,108 +142,106 @@
 /* Styles the lightbox, removes it from sight and adds the fade-in transition */
 
 .lightbox-target {
-    position: fixed;
-    top: -100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .7);
-    width: 100%;
-    opacity: 0;
-    -webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-    overflow: hidden;
-
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
 }
 
 /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
 
 .lightbox-target img {
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-height: 0%;
-    max-width: 0%;
-    border: 3px solid white;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
-    box-sizing: border-box;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 /* Styles the close link, adds the slide down transition */
 
 a.lightbox-close {
-    display: block;
-    width: 50px;
-    height: 50px;
-    box-sizing: border-box;
-    background: white;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: -80px;
-    right: 0;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 /* Provides part of the "X" to eliminate an image from the close link */
 
 a.lightbox-close:before {
-    content: "";
-    display: block;
-    height: 30px;
-    width: 1px;
-    background: black;
-    position: absolute;
-    left: 26px;
-    top: 10px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* Provides part of the "X" to eliminate an image from the close link */
 
 a.lightbox-close:after {
-    content: "";
-    display: block;
-    height: 30px;
-    width: 1px;
-    background: black;
-    position: absolute;
-    left: 26px;
-    top: 10px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
 
 .lightbox-target:target {
-    opacity: 1;
-    top: 0;
-    bottom: 0;
-    overflow: scroll;
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  overflow: scroll;
 }
 
 .lightbox-target:target img {
-    max-height: 100%;
-    max-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .lightbox-target:target a.lightbox-close {
-    top: 0;
+  top: 0;
 }

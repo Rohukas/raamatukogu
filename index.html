@@ -1,109 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laukna Raamatukogu</title>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laukna Raamatukogu</title>
-  <script src="js/main.js"></script>
-  <script src="js/index.js"></script>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
-</head>
-
-<body>
-  <div w3-include-html="navbar.html"></div>
-  <main>
-    <section>
-      <h2>Teated</h2>
-      <div class="event-list">
-        <figure>
-          <a href="#event1"><img src="images/event_1.jpg"></a>
-          <figcaption>Rello otsib uusi lauljaid!</figcaption>
-        </figure>
-        <figure>
-          <a href="#event2"><img src="images/event_2.jpg"></a>
-          <figcaption>Margus Tabori "Mamma lood"</figcaption>
-        </figure>
-        <figure>
-          <a href="#event3"><img src="images/event_3.jpg"></a>
-          <figcaption>Kingi koolile raamat</figcaption>
-        </figure>
-        <figure>
-          <a href="#event4"><img src="images/event_4.jpg"></a>
-          <figcaption>Kalender 2023</figcaption>
-        </figure>
-        <figure>
-          <a href="#event5"><img src="images/event_5.jpg"></a>
-          <figcaption>Raul Rebase "Propaganda ja ajupesu"</figcaption>
-        </figure>
-      </div>
-    </section>
-    <section>
-      <h2>Lahtiolekuajad</h2>
-      <div class="timetable">
-        <table>
-          <tr>
-            <th>Esmaspäev</th>
-            <td>11.30 - 18.30</td>
-          </tr>
-          <tr>
-            <th>Teisipäev</th>
-            <td>suletud</td>
-          </tr>
-          <tr>
-            <th>Kolmapäev</th>
-            <td>10.30 - 17.30</td>
-          </tr>
-          <tr>
-            <th>Neljapäev</th>
-            <td>suletud</td>
-          </tr>
-          <tr>
-            <th>Reede</th>
-            <td>10.00 - 17.00</td>
-          </tr>
-          <tr>
-            <th>Laupäev</th>
-            <td>suletud</td>
-          </tr>
-          <tr>
-            <th>Pühapäev</th>
-            <td>suletud</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-  </main>
-  <div w3-include-html="footer.html"></div>
-  <!--  Loome ligthboxid piltide suuremalt vaatamiseks.
+  <body>
+    <div w3-include-html="navbar.html"></div>
+    <main>
+      <section>
+        <h2>Teated</h2>
+        <div class="event-list">
+          <figure>
+            <a href="#event1"><img src="images/event_1.jpg" /></a>
+            <figcaption>Rello otsib uusi lauljaid!</figcaption>
+          </figure>
+          <figure>
+            <a href="#event2"><img src="images/event_2.jpg" /></a>
+            <figcaption>Margus Tabori "Mamma lood"</figcaption>
+          </figure>
+          <figure>
+            <a href="#event3"><img src="images/event_3.jpg" /></a>
+            <figcaption>Kingi koolile raamat</figcaption>
+          </figure>
+          <figure>
+            <a href="#event4"><img src="images/event_4.jpg" /></a>
+            <figcaption>Kalender 2023</figcaption>
+          </figure>
+          <figure>
+            <a href="#event5"><img src="images/event_5.jpg" /></a>
+            <figcaption>Raul Rebase "Propaganda ja ajupesu"</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="column-lists">
+        <div>
+          <h2>Lahtiolekuajad</h2>
+          <table class="timetable">
+            <tr>
+              <th>Esmaspäev</th>
+              <td>11.30 - 18.30</td>
+            </tr>
+            <tr>
+              <th>Teisipäev</th>
+              <td>suletud</td>
+            </tr>
+            <tr>
+              <th>Kolmapäev</th>
+              <td>10.30 - 17.30</td>
+            </tr>
+            <tr>
+              <th>Neljapäev</th>
+              <td>suletud</td>
+            </tr>
+            <tr>
+              <th>Reede</th>
+              <td>10.00 - 17.00</td>
+            </tr>
+            <tr>
+              <th>Laupäev</th>
+              <td>suletud</td>
+            </tr>
+            <tr>
+              <th>Pühapäev</th>
+              <td>suletud</td>
+            </tr>
+          </table>
+        </div>
+        <section id="contact-form">
+          <h2>Kontakt</h2>
+          <form id="contact" name="contact" accept-charset="utf-8">
+            <label>
+              <span>Nimi</span>
+              <input name="name" type="text" placeholder="Vargamäe Andres" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input
+                name="email"
+                type="email"
+                placeholder="andres@vargamae.ee"
+              />
+            </label>
+            <label>
+              <span>Sõnum</span>
+              <textarea
+                name="message"
+                placeholder="Tee tööd ja näe vaeva, siis tuleb armastus."
+              >
+              </textarea>
+            </label>
+            <input name="submit" type="submit" value="Saada" />
+          </form>
+        </section>
+      </section>
+      <section class="services">
+        <h2>Teenused</h2>
+        <div class="column-lists">
+          <div class="list-with-title">
+            <h3>Tasuta</h3>
+            <ul>
+              <li>teavikute kohapeal kasutamine</li>
+              <li>kojulaenutus</li>
+              <li>teatmenõuetele vastamine</li>
+              <li>kasutajakoolitused</li>
+              <li>kirjandusüritused</li>
+              <li>näitused</li>
+              <li>koduteenindus</li>
+              <li>WiFi võrgu kasutamine</li>
+            </ul>
+          </div>
+          <div class="list-with-title">
+            <h3>Tasuline</h3>
+            <ul>
+              <li>paljundamine</li>
+              <li>printimine</li>
+              <li>skaneerimine</li>
+              <li>kohviautomaadi kasutamine</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div w3-include-html="footer.html"></div>
+    <!--  Loome ligthboxid piltide suuremalt vaatamiseks.
         Autor: Tiffany Ong
         Link: https://codepen.io/ongtiffany/pen/BoOeQV  -->
-  <div class="lightbox-target" id="event1">
-    <img src="images/event_1.jpg" />
-    <a class="lightbox-close" href="#"></a>
-  </div>
-  <div class="lightbox-target" id="event2">
-    <img src="images/event_2.jpg" />
-    <a class="lightbox-close" href="#"></a>
-  </div>
-  <div class="lightbox-target" id="event3">
-    <img src="images/event_3.jpg" />
-    <a class="lightbox-close" href="#"></a>
-  </div>
-  <div class="lightbox-target" id="event4">
-    <img src="images/event_4.jpg" />
-    <a class="lightbox-close" href="#"></a>
-  </div>
-  <div class="lightbox-target" id="event5">
-    <img src="images/event_5.jpg" />
-    <a class="lightbox-close" href="#"></a>
-  </div>
-  <script>
-    includeHTML();
-  </script>
-</body>
-
+    <div class="lightbox-target" id="event1">
+      <img src="images/event_1.jpg" />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+    <div class="lightbox-target" id="event2">
+      <img src="images/event_2.jpg" />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+    <div class="lightbox-target" id="event3">
+      <img src="images/event_3.jpg" />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+    <div class="lightbox-target" id="event4">
+      <img src="images/event_4.jpg" />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+    <div class="lightbox-target" id="event5">
+      <img src="images/event_5.jpg" />
+      <a class="lightbox-close" href="#"></a>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+  </body>
 </html>

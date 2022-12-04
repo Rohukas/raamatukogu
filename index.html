@@ -2,19 +2,29 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laukna Raamatukogu</title>
   <script src="js/main.js"></script>
   <script src="js/index.js"></script>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
 </head>
 
 <body>
-  <div w3-include-html="navbar.html"></div>
+  <header>
+    <!-- TODO Hetkel logo liiga tume. Muuta heledamaks, erksamaks. -->
+    <img src="images/logo.png" width="74" alt="Laukna raamatukogu logo">
+    <p class="logo-text">Laukna Raamatukogu</p>
+    <nav>
+      <a href="/">Avaleht</a>
+      <a href="/uuedraamatud.html">Uued Raamatud</a>
+      <a href="/meielugu.html">Meie Lugu</a>
+    </nav>
+  </header>
+
   <main>
     <!-- Hero Sektsioon-->
     <section class="hero">
@@ -117,7 +127,7 @@
           </tr>
         </table>
       </div>
-      <div id="contact-form">
+      <section id="contact-form">
         <h2>Kontakt</h2>
         <form id="contact" name="contact" accept-charset="utf-8">
           <label>
@@ -134,7 +144,7 @@
           </label>
           <input name="submit" type="submit" value="Saada" />
         </form>
-      </div>
+      </section>
     </section>
     <section class="services">
       <h2>Teenused</h2>
@@ -164,33 +174,57 @@
       </div>
     </section>
   </main>
-  <div w3-include-html="footer.html"></div>
+
+  <footer>
+    <section>
+      <h2>Lehed</h2>
+      <ul>
+        <li><a href="/">Avaleht</a></li>
+        <li><a href="/uuedraamatud.html">Uued Raamatud</a></li>
+        <li><a href="/meielugu.html">Meie Lugu</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Kontakt</h2>
+      <ul>
+        <li>Laukna küla, Märjamaa vald, Raplamaa</li>
+        <li>5192 1519</li>
+        <li>laukna.raamatukogu@marjamaa.ee</li>
+        <li>Edith Alasi</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Sotsiaalmeedia</h2>
+      <a href="https://www.facebook.com/profile.php?id=100066900775376"><img src="images/facebook.png" width="38"
+          alt="Facebook'i logo"></a>
+      <a href="https://www.facebook.com/profile.php?id=100066900775376"><img src="images/instagram.png" width="38"
+          alt="Instagram'i logo"></a>
+    </section>
+  </footer>
+
   <!--  Loome ligthboxid piltide suuremalt vaatamiseks.
         Autor: Tiffany Ong
         Link: https://codepen.io/ongtiffany/pen/BoOeQV  -->
   <div class="lightbox-target" id="event1">
-    <img src="images/events/event_1.jpg" />
+    <img src="images/events/event_1.jpg" alt="Rello otsib uusi lauljaid!">
     <a class="lightbox-close" href="#"></a>
   </div>
   <div class="lightbox-target" id="event2">
-    <img src="images/events/event_2.jpg" />
+    <img src="images/events/event_2.jpg" alt="Margus Tabori - Mamma lood">
     <a class="lightbox-close" href="#"></a>
   </div>
   <div class="lightbox-target" id="event3">
-    <img src="images/events/event_3.jpg" />
+    <img src="images/events/event_3.jpg" alt="Kingi koolile raamat">
     <a class="lightbox-close" href="#"></a>
   </div>
   <div class="lightbox-target" id="event4">
-    <img src="images/events/event_4.jpg" />
+    <img src="images/events/event_4.jpg" alt="Kalender 2023">
     <a class="lightbox-close" href="#"></a>
   </div>
   <div class="lightbox-target" id="event5">
-    <img src="images/events/event_5.jpg" />
+    <img src="images/events/event_5.jpg" alt="Raul Rebase - Propaganda ja ajupesu">
     <a class="lightbox-close" href="#"></a>
   </div>
-  <script>
-    includeHTML();
-  </script>
 </body>
 
 </html>

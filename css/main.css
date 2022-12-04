@@ -63,10 +63,12 @@ h3 {
 .content {
   max-width: 600px;
 }
+
 .card-header {
   font-weight: bold;
   margin-bottom: 15px;
 }
+
 .card-content {
   font-weight: normal;
   margin-top: 20px;

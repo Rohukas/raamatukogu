@@ -5,10 +5,12 @@
   display: flex;
   justify-content: space-between;
 }
+
 .hero-text {
   font-weight: bold;
   max-width: 550px;
 }
+
 .hero-button-main {
   background-color: #52525b;
   border: none;
@@ -22,6 +24,7 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
 .hero-button-secondary {
   background-color: #52525b;
   border: none;
@@ -112,7 +115,8 @@
   text-align: center;
 }
 
-.services h2, .services h3 {
+.services h2,
+.services h3 {
   text-align: center;
 }
 
@@ -128,18 +132,22 @@ label,
 input[name="submit"] {
   position: relative;
 }
-label > p,
+
+label>p,
 input,
 textarea,
 button {
   box-sizing: border-box;
 }
+
 label {
   display: block;
 }
-label > p {
+
+label>p {
   display: none;
 }
+
 input,
 textarea,
 button {
@@ -147,6 +155,7 @@ button {
   padding: 0.5em;
   border: none;
 }
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -154,18 +163,22 @@ textarea {
   border: 1px solid #ccc;
   outline: none;
 }
+
 input.invalid,
 textarea.invalid {
   border-color: #d5144d;
 }
+
 textarea {
   height: 6em;
 }
+
 input[type="submit"],
 button {
   background: #4B5563;
   color: #f3f4f6;
 }
+
 input[type="submit"]:hover,
 button:hover {
   background: #374151;
@@ -175,6 +188,7 @@ button:hover {
   text-align: justify;
   line-height: 0;
 }
+
 #contact-form form {
   vertical-align: top;
   display: inline-block;

@@ -1,6 +1,6 @@
 # Laukna raamatukogu veebileht
 
-See veebileht on loodud, et asendada Laukna raamatukogu praegust veebilehte. Tutvu lähemalt meie [*wiki*'ga](https://github.com/Rohukas/raamatukogu/wiki).
+See veebileht on loodud, et asendada Laukna raamatukogu praegust veebilehte. Tutvu lähemalt meie [*wiki*'ga](https://github.com/Rohukas/raamatukogu/wiki/Laukna-raamatukogu-veebileht).
 
 &nbsp;  
 

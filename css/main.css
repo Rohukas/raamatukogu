@@ -59,9 +59,11 @@ h3 {
   max-width: 500px;
   height: auto;
 }
+
 .card-image {
   margin-left: 150px;
 }
+
 .content {
   max-width: 600px;
 }

@@ -11,7 +11,7 @@
   max-width: 550px;
 }
 
-.hero-button-main {
+.hero-button {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
@@ -21,6 +21,7 @@
 
   background-color: #52525b;
   border: none;
+  width: 50%;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -30,29 +31,11 @@
   margin: 50px 2px;
   cursor: pointer;
   border-radius: 5px;
-  width: 50%;
+  transition: 0.3s;
 }
 
-.hero-button-secondary {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-
-  text-decoration: none;
-  color: initial;
-
-  background-color: #52525b;
-  border: none;
-  width: 50%;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 50px 2px;
-  cursor: pointer;
-  border-radius: 5px;
+.hero-button:hover {
+  background-color: #71717A;
 }
 
 .hero-container {
@@ -197,13 +180,14 @@ textarea {
 
 input[type="submit"],
 button {
-  background: #4b5563;
+  background: #52525b;
   color: #f3f4f6;
+  transition: 0.3s;
 }
 
 input[type="submit"]:hover,
 button:hover {
-  background: #374151;
+  background: #71717A;
 }
 
 #contact-form {
